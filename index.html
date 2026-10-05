@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta data-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Shaiqin</title>
+    <meta property="og:title" content="Shaiqin | Portfolio" />
+    <meta property="og:site_name" content="www.5haiqin.com" />
+    <meta property="og:url" content="https://www.5haiqin.com/" />
+    <meta property="og:description"
+        content="Hi, I'm Shaiqin a Programmer who can develop responsive websites from scratch and raise them into modern user-friendly web experiences." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://i.pinimg.com/736x/44/ac/63/44ac63a44df57dfbc21010458445cae8.jpg" />
+    <!--favicon-->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Leaflet Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!--Style-->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!--============================
+        Nav Bar
+=============================-->
+    <header class="header--sticky">
+        <nav class="nav">
+            <div class="nav__logo">
+                <img src="assets/img-1.svg" alt="Hi-logo" class="nav__logo-img">
+                <p class="nav__logo-text">Hello World</p>
+            </div>
+            <hr class="nav__separator--mobile">
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link"><span>#</span>home</a>
+                </li>
+                <!-- Skills (Desktop only in Main) -->
+                <li class="nav__item nav-desktop-only">
+                    <a href="#skills" class="nav__link"><span>#</span>skills</a>
+                </li>
+                <!-- Project (Desktop only in Main) -->
+                <li class="nav__item nav-desktop-only">
+                    <a href="#project" class="nav__link"><span>#</span>project</a>
+                </li>
+                <!-- Resume (Always visible in Main) -->
+                <li class="nav__item">
+                    <a href="assets/Shaiqin_Resume.pdf"
+                        target="_blank" class="nav__link"><span>#</span>resume</a>
+                </li>
+                <!-- Contact (Mobile only in Main) -->
+                <li class="nav__item nav-mobile-only">
+                    <a href="#skills" class="nav__link"><span>#</span>skills</a>
+                </li>
+                <li class="nav__item nav-mobile-only">
+                    <a href="#contact" class="nav__link"><span>#</span>contact</a>
+                </li>
+                <!-- Contact (Desktop only — direct link replacing #more) -->
+                <li class="nav__item nav-desktop-only">
+                    <a href="#contact" class="nav__link"><span>#</span>contact</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <!--============================
+        Cyber Hero Section
+=============================-->
+    <div class="cyber-hero">
+        <div class="cyber-hero__top">
+            <h1 class="cyber-hero__headline">
+                Building Intelligent Systems <br>
+                and Immersive Tech that <br>
+                Connect and Execute with<br>
+                Seamless Interaction.
+            </h1>
+            <div class="cyber-hero__video-card" role="img" aria-label="Shaiqin with Laptop">
+            </div>
+        </div>
+
+        <div class="cyber-hero__strip-container">
+            <div class="cyber-hero__strip" id="cyber-marquee">
+                <span>Full Stack Developer</span>
+                <span>IoT & Robotics</span>
+                <span>Linux</span>
+                <span>Network Systems</span>
+                <span>Automation</span>
+                <span>Python Developer</span>
+                <span>Open Source</span>
+                <span>Prompt engineer</span>
+            </div>
+        </div>
+
+        <div class="cyber-hero__bottom">
+            <div class="cyber-hero__divider"></div>
+            <h2 class="cyber-hero__massive-text"><sup>I'm</sup><span>Shaiqin</span></h2>
+        </div>
+    </div>
+
+    <!--============================
+        About Section
+=============================-->
+    <section id="about" class="about">
+        <header class="section__header">
+            <hr>
+            <div class="slider__container">
+                <div class="slider__track">
+                    <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me
+                    <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me
+                    <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me
+                    <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me
+                    <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me
+                    <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me
+                    <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me
+                    <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me
+                    <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me
+                    <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me <span>#</span>about-me
+                </div>
+            </div>
+            <hr>
+        </header>
+        <article class="about__me">
+            <img src="assets/img-4.svg" alt="img-4" class="about__img">
+            <div class="about__text-wrapper">
+                <p class="about__text">
+                    <span class="about__prefix--desktop">I am a</span><span class="about__prefix--mobile">A</span>
+                    developer who loves building things that actually work. I don’t like to stay in just one box.
+                    I have spent my time learning everything from how electronic chips talk to hardware, to building
+                    full websites and managing secure servers. To me, being an engineer means being able to solve a
+                    problem no matter where it is.
+                    <br> <br>
+                    My experience is a mix of many worlds. I can build the brain of a project using Python and
+                    Full-Stack tools, protect it using Networking and Cybersecurity, and even handle the "body" through
+                    Hardware engineering. I also use Linux and Data Analysis to make sure everything runs smoothly and
+                    stays organized. I believe in keeping my work clean, simple, and easy to understand.
+                </p>
+            </div>
+        </article>
+    </section>
+    <!--============================
+        Education Section
+=============================-->
+    <section id="education" class="education">
+        <header class="section__header">
+            <hr>
+            <div class="slider__container">
+                <div class="slider__track">
+                    <span>#</span>education <span>#</span>education <span>#</span>education <span>#</span>education
+                    <span>#</span>education <span>#</span>education <span>#</span>education <span>#</span>education
+                    <span>#</span>education <span>#</span>education <span>#</span>education <span>#</span>education
+                    <span>#</span>education <span>#</span>education <span>#</span>education <span>#</span>education
+                    <span>#</span>education <span>#</span>education <span>#</span>education <span>#</span>education
+                    <span>#</span>education <span>#</span>education <span>#</span>education <span>#</span>education
+                    <span>#</span>education <span>#</span>education <span>#</span>education <span>#</span>education
+                    <span>#</span>education <span>#</span>education <span>#</span>education <span>#</span>education
+                    <span>#</span>education <span>#</span>education <span>#</span>education <span>#</span>education
+                    <span>#</span>education <span>#</span>education <span>#</span>education <span>#</span>education
+                </div>
+            </div>
+            <hr>
+        </header>
+
+        <div class="education-module">
+            <div class="education__map-container" id="edu-map">
+            </div>
+
+            <div class="education__lower-layout">
+                <div class="education__sidebar--mobile">
+                    <div class="education__sidebar-track">
+                        <div class="marquee-group">
+                            <div class="sidebar-item"><span>#</span>education</div>
+                            <div class="sidebar-item"><span>#</span>education</div>
+                            <div class="sidebar-item"><span>#</span>education</div>
+                            <div class="sidebar-item"><span>#</span>education</div>
+                            <div class="sidebar-item"><span>#</span>education</div>
+                            <div class="sidebar-item"><span>#</span>education</div>
+                        </div>
+                        <div class="marquee-group">
+                            <div class="sidebar-item"><span>#</span>education</div>
+                            <div class="sidebar-item"><span>#</span>education</div>
+                            <div class="sidebar-item"><span>#</span>education</div>
+                            <div class="sidebar-item"><span>#</span>education</div>
+                            <div class="sidebar-item"><span>#</span>education</div>
+                            <div class="sidebar-item"><span>#</span>education</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education__right-column">
+                    <div class="education__cards-container">
+                        <!-- Card 1 -->
+                        <div class="education-module__card" data-lat="23.715999048661224" data-lng="86.95169625104795">
+                            <p class="education-module__year">2023-2026</p>
+                            <p class="education-module__title">Asansol Engineering College</p>
+                            <p class="education-module__detail">Bachelor of Technology</p>
+                            <p class="education-module__detail">Computer Science Engineering (IoT, Cybersecurity &
+                                Blockchain Technology)</p>
+                            <p class="education-module__detail">Asansol</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="education-module__card" data-lat="31.77545346189297" data-lng="76.98607787791074">
+                            <p class="education-module__year">2024-2025</p>
+                            <p class="education-module__title">IIT Mandi</p>
+                            <p class="education-module__detail">Minor in CSE and Advanced Technologies</p>
+                            <p class="education-module__detail">Computer Science Engineering</p>
+                            <p class="education-module__detail">Mandi</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="education-module__card" data-lat="23.681821710728176" data-lng="87.01485961959244">
+                            <p class="education-module__year">2020-2023</p>
+                            <p class="education-module__title">Asansol Institute of Eng & Management Polytechnic</p>
+                            <p class="education-module__detail">Diploma</p>
+                            <p class="education-module__detail">Computer Science Technology</p>
+                            <p class="education-module__detail">Asansol</p>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="education-module__card" data-lat="23.669850629474944" data-lng="87.0394981778051">
+                            <p class="education-module__year">2019-2020</p>
+                            <p class="education-module__title">Asansol North Point School</p>
+                            <p class="education-module__detail">10th Board</p>
+                            <p class="education-module__detail">CBSE Board</p>
+                            <p class="education-module__detail">Asansol</p>
+                        </div>
+                    </div>
+                    <p class="education__swipe-indicator">Swipe for more ~></p>
+                </div>
+            </div>
+    </section>
+    <!--============================
+        Skills Section
+=============================-->
+    <section id="skills" class="skills">
+        <header class="section__header">
+            <hr>
+            <div class="slider__container">
+                <div class="slider__track">
+                    <span>#</span>skills <span>#</span>skills <span>#</span>skills <span>#</span>skills
+                    <span>#</span>skills <span>#</span>skills <span>#</span>skills <span>#</span>skills
+                    <span>#</span>skills <span>#</span>skills <span>#</span>skills <span>#</span>skills
+                    <span>#</span>skills <span>#</span>skills <span>#</span>skills <span>#</span>skills
+                    <span>#</span>skills <span>#</span>skills <span>#</span>skills <span>#</span>skills
+                    <span>#</span>skills <span>#</span>skills <span>#</span>skills <span>#</span>skills
+                    <span>#</span>skills <span>#</span>skills <span>#</span>skills <span>#</span>skills
+                    <span>#</span>skills <span>#</span>skills <span>#</span>skills <span>#</span>skills
+                    <span>#</span>skills <span>#</span>skills <span>#</span>skills <span>#</span>skills
+                    <span>#</span>skills <span>#</span>skills <span>#</span>skills <span>#</span>skills
+                </div>
+            </div>
+            <hr>
+        </header>
+        <article class="skills__container">
+            <div class="skills__img-wrapper">
+                <img src="assets/img-3.gif" alt="img-3" class="skills__img">
+            </div>
+            <aside class="skills__list">
+                <div class="skill-box">
+                    <p class="skill-box__title"><span>#</span>Languages</p>
+                    <hr>
+                    <div class="skill-box__detail">
+                        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                            alt="Python">
+                        <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
+                            alt="Java">
+                        <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                            alt="JavaScript">
+                        <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+                            alt="HTML5">
+                        <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+                            alt="CSS3">
+                        <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"
+                            alt="C++">
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p class="skill-box__title"><span>#</span>Frameworks & Libraries</p>
+                    <hr>
+                    <div class="skill-box__detail">
+                        <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                            alt="React">
+                        <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
+                            alt="Node.js">
+                        <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                            alt="Tailwind CSS">
+                        <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white"
+                            alt="Vite">
+                        <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"
+                            alt="Next.js">
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p class="skill-box__title"><span>#</span>IoT & Robotics</p>
+                    <hr>
+                    <div class="skill-box__detail">
+                        <img src="https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi"
+                            alt="Raspberry Pi">
+                        <img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white"
+                            alt="ESP32">
+                        <img src="https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white"
+                            alt="Arduino">
+                        <img src="https://img.shields.io/badge/Sensors%20%26%20Actuators-000000?style=for-the-badge"
+                            alt="Sensors & Actuators">
+                        <img src="https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ros&logoColor=white"
+                            alt="ROS2">
+                        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"
+                            alt="OpenCV">
+                        <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
+                            alt="Linux">
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p class="skill-box__title"><span>#</span>Databases & Cloud</p>
+                    <hr>
+                    <div class="skill-box__detail">
+                        <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
+                            alt="MySQL">
+                        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"
+                            alt="Supabase">
+                        <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"
+                            alt="MongoDB">
+                        <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"
+                            alt="Firebase">
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p class="skill-box__title"><span>#</span>Others Tools</p>
+                    <hr>
+                    <div class="skill-box__detail">
+                        <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
+                            alt="Git">
+                        <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+                            alt="GitHub">
+                        <img src="https://img.shields.io/badge/Antigravity-000000?style=for-the-badge&logo=google&logoColor=white"
+                            alt="Antigravity">
+                        <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
+                            alt="Docker">
+                        <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"
+                            alt="Vercel">
+                        <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"
+                            alt="Figma">
+                        <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white"
+                            alt="Canva">
+                        <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"
+                            alt="Ubuntu">
+                    </div>
+                </div>
+            </aside>
+        </article>
+    </section>
+
+    <!--============================
+        Project Section
+=============================-->
+    <section id="project" class="project-section">
+        <header class="section__header">
+            <hr>
+            <div class="slider__container">
+                <div class="slider__track">
+                    <span>#</span>project <span>#</span>project <span>#</span>project <span>#</span>project
+                    <span>#</span>project <span>#</span>project <span>#</span>project <span>#</span>project
+                    <span>#</span>project <span>#</span>project <span>#</span>project <span>#</span>project
+                    <span>#</span>project <span>#</span>project <span>#</span>project <span>#</span>project
+                    <span>#</span>project <span>#</span>project <span>#</span>project <span>#</span>project
+                    <span>#</span>project <span>#</span>project <span>#</span>project <span>#</span>project
+                    <span>#</span>project <span>#</span>project <span>#</span>project <span>#</span>project
+                    <span>#</span>project <span>#</span>project <span>#</span>project <span>#</span>project
+                    <span>#</span>project <span>#</span>project <span>#</span>project <span>#</span>project
+                    <span>#</span>project <span>#</span>project <span>#</span>project <span>#</span>project
+                </div>
+            </div>
+            <hr>
+        </header>
+        <article class="project-list">
+            <div class="project__showcase">
+                <aside class="project-card">
+                    <div class="image-container">
+                        <img src="project/project-img (4).svg" alt="Project Preview">
+                    </div>
+                    <div class="lower-layout">
+                        <div class="info-area">
+                            <div class="title-box">
+                                <h2 class="title"><span>#</span>Sentinel-R-V4</h2>
+                            </div>
+                            <div class="desc-box">
+                                <p class="desc-text">
+                                    Engineered a master-slave architecture with a Raspberry Pi 5 hub for encrypted
+                                    global telemetry tunneling alongside
+                                    localized Arduino-driven CLI command setups.
+                                </p>
+                            </div>
+                            <div class="btn-row">
+                                <a href="https://youtu.be/wpxTTyQ5jkY?si=pTJMIec9r9HWy9Vg" target="_blank"
+                                    class="btn">Live
+                                    <span class="hide-on-mobile">Demo</span> <i
+                                        class="fa-solid fa-satellite-dish"></i></a>
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7443979837662310400/"
+                                    target="_blank" class="btn">More <span class="hide-on-mobile">Detail</span> <i
+                                        class="fa-solid fa-circle-info"></i></a>
+                            </div>
+                        </div>
+                        <div class="sidebar">
+                            <div class="icon-track">
+                                <img src="https://skillicons.dev/icons?i=raspberrypi" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=ros" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=cpp" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=py" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=raspberrypi" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=ros" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=cpp" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=py" class="skill-icon">
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="project-card">
+                    <div class="image-container">
+                        <img src="project/project-img (5).svg" alt="Project Preview">
+                    </div>
+                    <div class="lower-layout">
+                        <div class="info-area">
+                            <div class="title-box">
+                                <h2 class="title"><span>#</span>VAYU SETU</h2>
+                            </div>
+                            <div class="desc-box">
+                                <p class="desc-text">
+                                    A hybrid LoRa/ESP-NOW decentralized IoT mesh network integrating real-time hazard
+                                    monitoring, a forensic Blackbox, and haptic smart helmet alert systems.
+                                </p>
+                            </div>
+                            <div class="btn-row">
+                                <a href="https://drive.google.com/file/d/1-HUXYLzGg71Zr6j-8cpUAwhrjiCR1rmU/view"
+                                    target="_blank" class="btn">Live <span class="hide-on-mobile">Demo</span> <i
+                                        class="fa-solid fa-satellite-dish"></i></a>
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7442180706295857153/"
+                                    target="_blank" class="btn">More <span class="hide-on-mobile">Detail</span> <i
+                                        class="fa-solid fa-circle-info"></i></a>
+                            </div>
+                        </div>
+                        <div class="sidebar">
+                            <div class="icon-track">
+                                <img src="https://skillicons.dev/icons?i=cpp" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=nodejs" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=react" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=arduino" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=cpp" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=nodejs" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=react" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=arduino" class="skill-icon">
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="project-card">
+                    <div class="image-container">
+                        <img src="project/project-img (6).svg" alt="Project Preview">
+                    </div>
+                    <div class="lower-layout">
+                        <div class="info-area">
+                            <div class="title-box">
+                                <h2 class="title"><span>#</span>GeoAdhikar</h2>
+                            </div>
+                            <div class="desc-box">
+                                <p class="desc-text">
+                                    A minimalist weather checking web application powered by OpenWeatherMap API. Enter
+                                    your location
+                                    to instantly retrieve current weather conditions, temperature & More. Clean and
+                                    user-friendly
+                                    interface, perfect for quick weather updates seamless integration and accessibility.
+                                </p>
+                            </div>
+                            <div class="btn-row">
+                                <a href="https://www.youtube.com/watch?v=KT3YJ4mpgAU&feature=youtu.be" target="_blank"
+                                    class="btn">Live <span class="hide-on-mobile">Demo</span> <i
+                                        class="fa-solid fa-satellite-dish"></i></a>
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7410956113011105792/"
+                                    target="_blank" class="btn">More <span class="hide-on-mobile">Detail</span> <i
+                                        class="fa-solid fa-circle-info"></i></a>
+                            </div>
+                        </div>
+                        <div class="sidebar">
+                            <div class="icon-track">
+                                <img src="https://skillicons.dev/icons?i=django" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=py" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=react" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=github" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=django" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=py" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=react" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=github" class="skill-icon">
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="project-card">
+                    <div class="image-container">
+                        <img src="project/image.png" alt="Project Preview">
+                    </div>
+                    <div class="lower-layout">
+                        <div class="info-area">
+                            <div class="title-box">
+                                <h2 class="title"><span>#</span>TATA Healthcare</h2>
+                            </div>
+                            <div class="desc-box">
+                                <p class="desc-text">
+                                    Designed and delivered a secure multi-tenant healthcare web application servicing
+                                    over 500+ users with strict
+                                    dynamic dashboard Role-Based Access Control (RBAC) authorizations
+                                </p>
+                            </div>
+                            <div class="btn-row">
+                                <a href="https://tata-healthcare-demo.vercel.app/" target="_blank" class="btn">Live
+                                    <span class="hide-on-mobile">Demo</span> <i
+                                        class="fa-solid fa-satellite-dish"></i></a>
+                                <a href="https://www.linkedin.com/posts/shaiqin_softwareengineering-django-tatapower-activity-7405093756473110529-RNB4"
+                                    target="_blank" class="btn">More <span class="hide-on-mobile">Detail</span> <i
+                                        class="fa-solid fa-circle-info"></i></a>
+                            </div>
+                        </div>
+                        <div class="sidebar">
+                            <div class="icon-track">
+                                <img src="https://skillicons.dev/icons?i=django" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=mysql" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=js" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=figma" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=django" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=mysql" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=js" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=figma" class="skill-icon">
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="project-card">
+                    <div class="image-container">
+                        <img src="project/project-img (0).png" alt="Project Preview">
+                    </div>
+                    <div class="lower-layout">
+                        <div class="info-area">
+                            <div class="title-box">
+                                <h2 class="title"><span>#</span>Pixelize</h2>
+                            </div>
+                            <div class="desc-box">
+                                <p class="desc-text">
+                                    Pixelize is a bold, visually striking frontend project for a modern digital agency,
+                                    featuring
+                                    services like SEO, web development, and social media marketing. Its vibrant UI
+                                    ensures an
+                                    engaging and seamless user experience.
+                                </p>
+                            </div>
+                            <div class="btn-row">
+                                <a href="https://pixelize-digital-studio.netlify.app/" target="_blank" class="btn">Live
+                                    <span class="hide-on-mobile">Demo</span> <i
+                                        class="fa-solid fa-satellite-dish"></i></a>
+                                <a href="https://github.com/5haiqin/Pixelize-Digital-Studio" target="_blank"
+                                    class="btn">More <span class="hide-on-mobile">Detail</span> <i
+                                        class="fa-solid fa-circle-info"></i></a>
+                            </div>
+                        </div>
+                        <div class="sidebar">
+                            <div class="icon-track">
+                                <img src="https://skillicons.dev/icons?i=react" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=tailwind" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=vite" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=js" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=react" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=tailwind" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=vite" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=js" class="skill-icon">
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="project-card">
+                    <div class="image-container">
+                        <img src="project/project-img (1).svg" alt="Project Preview">
+                    </div>
+                    <div class="lower-layout">
+                        <div class="info-area">
+                            <div class="title-box">
+                                <h2 class="title"><span>#</span>Cloud Watch</h2>
+                            </div>
+                            <div class="desc-box">
+                                <p class="desc-text">
+                                    A minimalist weather checking web application powered by OpenWeatherMap API. Enter
+                                    your location
+                                    to instantly retrieve current weather conditions, temperature & More. Clean and
+                                    user-friendly
+                                    interface, perfect for quick weather updates seamless integration and accessibility.
+                                </p>
+                            </div>
+                            <div class="btn-row">
+                                <a href="https://5haiqin.github.io/Cloud-Watch/" target="_blank" class="btn">Live <span
+                                        class="hide-on-mobile">Demo</span> <i
+                                        class="fa-solid fa-satellite-dish"></i></a>
+                                <a href="https://github.com/5haiqin/Cloud-Watch" target="_blank" class="btn">More <span
+                                        class="hide-on-mobile">Detail</span> <i class="fa-solid fa-circle-info"></i></a>
+                            </div>
+                        </div>
+                        <div class="sidebar">
+                            <div class="icon-track">
+                                <img src="https://skillicons.dev/icons?i=html" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=css" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=js" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=github" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=react" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=nodejs" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=html" class="skill-icon">
+                                <img src="https://skillicons.dev/icons?i=github" class="skill-icon">
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+        <div class="view-all">
+            <a href="project.html" class="view-all__link" id="mobile-view-all"><span>#</span>View
+                all&lt;<span>~</span>&gt; </a>
+        </div>
+    </section>
+    <!--============================
+        Achievements Section
+    =============================-->
+    <section id="achievements">
+        <header class="section__header">
+            <hr>
+            <div class="slider__container">
+                <div class="slider__track">
+                    <span>#</span>Certifications <span>#</span>Certifications <span>#</span>Certifications
+                    <span>#</span>Certifications
+                    <span>#</span>Certifications <span>#</span>Certifications <span>#</span>Certifications
+                    <span>#</span>Certifications
+                    <span>#</span>Certifications <span>#</span>Certifications <span>#</span>Certifications
+                    <span>#</span>Certifications
+                    <span>#</span>Certifications <span>#</span>Certifications <span>#</span>Certifications
+                    <span>#</span>Certifications
+                </div>
+            </div>
+            <hr>
+        </header>
+
+        <div class="achievements__layout">
+            <div class="achievements__grid">
+                <a href="https://drive.google.com/file/d/12-U-roAGPiEeD1dpkiCOZc6fMTIP75sX/view" target="_blank"
+                    class="cert-card">
+                    <div class="cert-preview">
+                        <img src="https://drive.google.com/thumbnail?id=12-U-roAGPiEeD1dpkiCOZc6fMTIP75sX&sz=w1000"
+                            alt="IIT Mandi Cert">
+                        <div class="cert-overlay"><span>VIEW</span></div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title"><span>#</span>IIT Mandi - Advanced Technologies Specialization</h3>
+                    </div>
+                </a>
+                <a href="https://drive.google.com/file/d/1JrNXX2Aq_TaATHQU0OWR_L531kIao68y/view" target="_blank"
+                    class="cert-card">
+                    <div class="cert-preview">
+                        <img src="https://drive.google.com/thumbnail?id=1JrNXX2Aq_TaATHQU0OWR_L531kIao68y&sz=w1000"
+                            alt="Tech Cert">
+                        <div class="cert-overlay"><span>VIEW</span></div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title"><span>#</span>Aspire Leaders Program</h3>
+                    </div>
+                </a>
+                <a href="https://drive.google.com/file/d/1WBlfkj8qZuRTYWhk93JGuxuipCKRMSuw/view" target="_blank"
+                    class="cert-card">
+                    <div class="cert-preview">
+                        <img src="https://drive.google.com/thumbnail?id=1WBlfkj8qZuRTYWhk93JGuxuipCKRMSuw&sz=w1000"
+                            alt="SIH/Award">
+                        <div class="cert-overlay"><span>VIEW</span></div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title"><span>#</span>Generative AI Mastermind</h3>
+                    </div>
+                </a>
+                <a href="https://drive.google.com/file/d/1wjuXLJFQpgDGxj9qYib-hlB0v_g9TgPL/view" target="_blank"
+                    class="cert-card">
+                    <div class="cert-preview">
+                        <img src="https://drive.google.com/thumbnail?id=1wjuXLJFQpgDGxj9qYib-hlB0v_g9TgPL&sz=w1000"
+                            alt="IIT Mandi Cert">
+                        <div class="cert-overlay"><span>VIEW</span></div>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title"><span>#</span>Startup School: Prompt to Prototype </h3>
+                    </div>
+                </a>
+            </div>
+
+            <a href="https://www.linkedin.com/in/shaiqin/details/certifications/" target="_blank"
+                class="achievements__more-btn">
+                <span>#</span>More
+            </a>
+        </div>
+    </section>
+
+    <!--============================
+        Experience Section
+    =============================-->
+    <section id="experience">
+        <header class="section__header">
+            <hr>
+            <div class="slider__container">
+                <div class="slider__track">
+                    <span>#</span>experience <span>#</span>experience <span>#</span>experience <span>#</span>experience
+                    <span>#</span>experience <span>#</span>experience <span>#</span>experience <span>#</span>experience
+                    <span>#</span>experience <span>#</span>experience <span>#</span>experience <span>#</span>experience
+                    <span>#</span>experience <span>#</span>experience <span>#</span>experience <span>#</span>experience
+                </div>
+            </div>
+            <hr>
+        </header>
+
+        <!-- Mobile vertical sidebar (hidden on desktop, shown on mobile) -->
+        <div class="exp__mobile-layout">
+            <div class="exp__sidebar--mobile">
+                <div class="exp__sidebar-track">
+                    <div class="marquee-group">
+                        <div class="sidebar-item"><span>#</span>experience</div>
+                        <div class="sidebar-item"><span>#</span>experience</div>
+                        <div class="sidebar-item"><span>#</span>experience</div>
+                        <div class="sidebar-item"><span>#</span>experience</div>
+                        <div class="sidebar-item"><span>#</span>experience</div>
+                        <div class="sidebar-item"><span>#</span>experience</div>
+                    </div>
+                    <div class="marquee-group">
+                        <div class="sidebar-item"><span>#</span>experience</div>
+                        <div class="sidebar-item"><span>#</span>experience</div>
+                        <div class="sidebar-item"><span>#</span>experience</div>
+                        <div class="sidebar-item"><span>#</span>experience</div>
+                        <div class="sidebar-item"><span>#</span>experience</div>
+                        <div class="sidebar-item"><span>#</span>experience</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp__cards-column">
+                <div class="exp-grid">
+                    <div class="exp-card card-7">
+                        <span class="date-float">OCT '25 - NOV '25</span>
+                        <span class="role">Full Stack Developer Intern</span>
+                        <span class="company">TATA POWER</span>
+                        <ul class="feature-list">
+                            <li>Developed real-time monitoring dashboards for industrial power systems.</li>
+                            <li>Connected backend APIs with live sensor data for operational analysis.</li>
+                            <li>Optimized database queries to manage large energy consumption datasets.</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="tags"><span class="tag">#react</span><span class="tag">#node.js</span><span
+                                    class="tag">#mysql</span></div>
+                            <a href="https://www.linkedin.com/posts/shaiqin_softwareengineering-django-tatapower-activity-7405093756473110529-RNB4"
+                                class="more-detail-btn">More Detail <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="exp-card card-5">
+                        <span class="date-float">2X CONTRIBUTOR</span>
+                        <span class="role">Open Source Contributor</span>
+                        <span class="company">HACKTOBERFEST</span>
+                        <ul class="feature-list">
+                            <li>Successfully contributed twice to global open-source projects.</li>
+                            <li>Resolved GitHub issues and merged high-quality PRs in multiple repositories.</li>
+                            <li>Collaborated with international developers to improve documentation and code logic.</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="tags"><span class="tag">#git</span><span class="tag">#github</span><span
+                                    class="tag">#opensource</span></div>
+                            <a href="https://www.linkedin.com/posts/shaiqin_hacktoberfest-opensource-leamingbydoing-activity-7385732305325080576-3XdO"
+                                class="more-detail-btn">More Detail <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="exp-card card-5">
+                        <span class="date-float">UI/UX DESIGN</span>
+                        <span class="role">UI/UX Designer</span>
+                        <span class="company">ViTALSKIL</span>
+                        <ul class="feature-list">
+                            <li>Designed the 'Pixelize' brand identity and visual UX architecture.</li>
+                            <li>Built fully responsive, mobile-first layouts for digital marketing clients.</li>
+                            <li>Optimized site structure for SEO and improved user engagement flows.</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="tags"><span class="tag">#figma</span><span class="tag">#branding</span><span
+                                    class="tag">#uiux</span></div>
+                            <a href="https://www.linkedin.com/posts/shaiqin_frontenddev-webdesign-creativeagency-activity-7250307391655706624-N-Ek"
+                                class="more-detail-btn">More Detail <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="exp-card card-7">
+                        <span class="date-float">HACKSPIRE'25</span>
+                        <span class="role">Campus Evangelist</span>
+                        <span class="company">FIEM ACM STUDENT CHAPTER</span>
+                        <ul class="feature-list">
+                            <li>Spearheaded outreach for HackSpire'25 to spark community collaboration.</li>
+                            <li>Bridged the gap between technical mentors and student creators.</li>
+                            <li>Managed community platforms to foster learning and networking.</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="tags"><span class="tag">#leadership</span><span
+                                    class="tag">#networking</span><span class="tag">#community</span></div>
+                            <a href="https://www.linkedin.com/posts/shaiqin_pumped-to-share-that-im-now-an-evangelist-activity-7372332515396812801-Co91"
+                                class="more-detail-btn">More Detail <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="exp-card card-full">
+                        <span class="date-float">AI/ML INTERNSHIP</span>
+                        <span class="role">Machine Learning Intern</span>
+                        <span class="company">ARDENT COLLABORATIONS</span>
+                        <ul class="feature-list">
+                            <li>Built an intelligent Movie Recommendation System using Python and ML algorithms.</li>
+                            <li>Analyzed user datasets to implement Content-Based and Collaborative Filtering logic.
+                            </li>
+                            <li>Improved model prediction accuracy through rigorous metadata pre-processing.</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="tags"><span class="tag">#python</span><span class="tag">#ml</span><span
+                                    class="tag">#data_science</span></div>
+                            <a href="#" class="more-detail-btn">More Detail <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============================
+        Contact Section
+=============================-->
+    <section id="contact">
+        <header class="section__header">
+            <hr>
+            <div class="slider__container">
+                <div class="slider__track">
+                    <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me
+                    <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me
+                    <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me
+                    <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me
+                    <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me
+                    <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me
+                    <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me
+                    <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me
+                    <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me
+                    <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me <span>#</span>contact-me
+                </div>
+            </div>
+            <hr>
+        </header>
+        <article class="contact__container">
+            <div class="contact__header">
+                I’m interested in freelance and intern opportunities. However, if you have other request or question,
+                don’t hesitate let’s talk
+                <nav class="contact__socials">
+                    <a href="https://www.linkedin.com/in/shaiqin/" target="_blank" class="contact__social-link"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/5haiqin" target="_blank" class="contact__social-link"><i
+                            class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://github.com/5haiqin" target="_blank" class="contact__social-link"><i
+                            class="fa-brands fa-square-github"></i></a>
+                    <a href="mailto:nk90901010@gmail.com" class="contact__social-link"><i
+                            class="fa-solid fa-square-envelope"></i></a>
+                </nav>
+            </div>
+        </article>
+        <div class="contact__form-wrapper">
+            <form action="https://formspree.io/f/xnqeqlkk" method="POST">
+                <label class="form__label"><span>#</span>Name</label>
+                <input type="text" name="name" class="form__input" required>
+                <label class="form__label"><span>#</span>E-mail</label>
+                <input type="email" name="email" class="form__input" required>
+                <label class="form__label"><span>#</span>Message</label>
+                <textarea name="message" class="form__textarea" rows="4" required></textarea> <br> <br>
+                <button type="submit" class="form__submit"> <span>#</span>submit</button>
+            </form>
+        </div>
+        <div class="contact__illustration">
+            <img src="assets/mail-cover.svg" alt="mail cover" class="contact__img">
+        </div>
+        <hr>
+    </section>
+    <footer class="footer">
+        <p class="footer__text">
+            © Copyright 2026. Made by Shaiqin
+        </p>
+    </footer>
+</body>
+
+</html>

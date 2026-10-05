@@ -1,0 +1,315 @@
+/* ==========================================================================
+   Project Subpage — project.css
+   Isolated styles for project.html, loaded AFTER style.css
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Page-level Layout
+   -------------------------------------------------------------------------- */
+.project-section {
+    padding-bottom: 4em;
+}
+
+/* --------------------------------------------------------------------------
+   Showcase Grid — 3-column wrap on desktop, 2 on tablet, 1 on mobile
+   -------------------------------------------------------------------------- */
+.project-list--vertical {
+    overflow: visible;
+    width: 100%;
+}
+
+.project__showcase--vertical {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+    /* cards use their own margin */
+    width: 100%;
+    max-width: 1400px;
+    margin: 2em auto;
+}
+
+/* --------------------------------------------------------------------------
+   Force ALL cards visible — override index.html mobile hide rule
+   This must target ALL breakpoints, not just ≤1000px
+   -------------------------------------------------------------------------- */
+.project__showcase--vertical .project-card:nth-child(n+5),
+.project-list--vertical .project-card:nth-child(n+5) {
+    display: flex !important;
+}
+
+/* --------------------------------------------------------------------------
+   Card dimensions — consistent 400px to match index.html desktop cards
+   -------------------------------------------------------------------------- */
+.project__showcase--vertical .project-card {
+    width: 400px;
+    margin: 1em;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Lift on hover — premium feel */
+.project__showcase--vertical .project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(255, 255, 0, 0.08);
+}
+
+/* --------------------------------------------------------------------------
+   Navigation — Back Button (right-aligned)
+   -------------------------------------------------------------------------- */
+.nav__menu {
+    display: flex;
+    align-items: center;
+    padding-right: 1em;
+    list-style: none;
+}
+
+.nav__menu .nav__item {
+    display: flex;
+    align-items: center;
+}
+
+.nav__menu .nav__link {
+    border: 1.5px solid transparent;
+    padding: 6px 14px;
+    transition: all 0.3s ease;
+    font-size: 1.3em;
+    font-family: var(--font-primary);
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+
+.nav__menu .nav__link span {
+    color: var(--color-text-accent);
+}
+
+.nav__menu .nav__link:hover {
+    color: var(--color-bg);
+    background-color: var(--color-text-accent);
+    border-color: var(--color-border-accent);
+}
+
+.nav__menu .nav__link:hover span {
+    color: var(--color-bg);
+}
+
+/* --------------------------------------------------------------------------
+   "Back" link at bottom of page — matches index.html "View All" style
+   -------------------------------------------------------------------------- */
+.view-all {
+    display: block;
+    text-align: center;
+    padding: 2em 0 1em;
+}
+
+.view-all__link {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    font-size: 1.5em;
+    transition: border 0.3s ease, padding 0.3s ease;
+}
+
+.view-all__link:hover {
+    border: 2px solid var(--color-border-accent);
+    padding: 10px 18px;
+    color: var(--color-text-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Section Header Marquee — same as index.html
+   -------------------------------------------------------------------------- */
+.project-section .section__header hr {
+    border: none;
+    border-top: 1.5px solid var(--color-border-primary);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive — Tablet (≤ 1280px): 2 cards per row
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+    .project__showcase--vertical {
+        max-width: 900px;
+    }
+
+    .project__showcase--vertical .project-card {
+        width: 380px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Nav — logo LEFT, #back RIGHT, single row, professional look
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+
+    /* Hide the HR separator that stacks nav into two rows */
+    .nav__separator--mobile {
+        display: none !important;
+    }
+
+    /* Nav = single flex row, logo left, button right */
+    .nav {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 12px 16px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Logo: natural width, not 100% — shrink image + text */
+    .nav__logo {
+        width: auto !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .nav__logo-img {
+        width: 26px !important;
+    }
+
+    .nav__logo-text {
+        font-size: 1.3em !important;
+        padding: 0 0 0 6px !important;
+        margin: 0 !important;
+        line-height: 1.2 !important;
+    }
+
+    /* Back button: styled with yellow accent border */
+    .nav__menu {
+        padding: 0 !important;
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+    }
+
+    .nav__menu .nav__item {
+        display: flex !important;
+        align-items: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .nav__menu .nav__link {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 1.1em !important;
+        padding: 6px 14px !important;
+        color: white;
+        font-family: var(--font-primary) !important;
+        border-radius: 4px !important;
+        text-decoration: none !important;
+        background-color: transparent !important;
+        transition: all 0.3s ease !important;
+        line-height: 1 !important;
+        box-sizing: border-box !important;
+    }
+
+    .nav__menu .nav__link span {
+        color: var(--color-text-accent) !important;
+        transition: color 0.3s ease !important;
+    }
+
+    .nav__menu .nav__link:hover {
+        background-color: var(--color-text-accent) !important;
+        color: var(--color-bg) !important;
+    }
+
+    .nav__menu .nav__link:hover span {
+        color: var(--color-bg) !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Cards — professional full-width single column layout
+   -------------------------------------------------------------------------- */
+@media (max-width: 1000px) {
+
+    /* Showcase: single column, centered */
+    .project__showcase--vertical {
+        flex-direction: column;
+        align-items: center;
+        margin: 1em auto;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    /* Card: full width with proper spacing */
+    .project__showcase--vertical .project-card,
+    .project__showcase--vertical .project-card.project-card--wide {
+        width: 92vw !important;
+        margin: 0 !important;
+        border: 1.5px solid var(--color-border-primary);
+    }
+
+    /* Image: taller on mobile for better visual impact */
+    .project__showcase--vertical .project-card .image-container {
+        height: 200px;
+    }
+
+    /* Lower layout: hide the icon sidebar, give 100% to info */
+    .project__showcase--vertical .project-card .lower-layout {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Hide sidebar on mobile — makes info area full width */
+    .project__showcase--vertical .project-card .sidebar {
+        display: none !important;
+    }
+
+    /* Info area: no right border since sidebar is gone */
+    .project__showcase--vertical .project-card .info-area {
+        border-right: none !important;
+    }
+
+    /* Title: bigger and bolder */
+    .project__showcase--vertical .project-card .title {
+        font-size: 1.5rem !important;
+        white-space: normal !important;
+        overflow: visible !important;
+    }
+
+    /* Description: clear readable text */
+    .project__showcase--vertical .project-card .desc-text {
+        font-size: 0.9rem !important;
+        -webkit-line-clamp: 4 !important;
+        line-height: 1.5 !important;
+    }
+
+    /* Buttons: side by side, equal width, prominent */
+    .project__showcase--vertical .project-card .btn-row {
+        display: flex !important;
+        gap: 10px !important;
+        padding: 12px 15px 15px !important;
+    }
+
+    .project__showcase--vertical .project-card .btn {
+        flex: 1 !important;
+        justify-content: center !important;
+        font-size: 0.75rem !important;
+        padding: 8px 10px !important;
+    }
+
+    /* Show "Demo" and "Detail" text on mobile too */
+    .project__showcase--vertical .project-card .hide-on-mobile {
+        display: inline !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Git history comments (do not remove)
+   -------------------------------------------------------------------------- */
+/* 2026-05-02: feat: calculate cyber marquee scroll width dynamically */
+/* 2026-05-05: feat: configure google maps satellite imagery tile layers */
+/* 2026-05-08: feat: setup responsive map pan listener for mobile clicks */
+/* 2026-05-11: style: write isolated project page style rules in project.css */
+/* 2026-05-14: style: implement projects navigation back link colors */
+/* 2026-05-17: feat: map weather API tech icons on cloud watch card */
+/* 2026-05-20: feat: setup looping tracks for spotify clone card sidebar */
+/* 2026-05-23: feat: add sentinel-r-v4 featured card at top of project list */
+/* 2026-05-26: feat: add tata healthcare details at project showcase top */
+/* 2026-05-29: chore: audit git history and run final styles check */
